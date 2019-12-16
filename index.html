@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Bootstrap Theme</title>
+
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+  <!-- NAV MENU -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand colorLight fontBold px-1" href="#">
+        <img src="/img/ak.png" alt="" width="50" height="28">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon" onclick="openNav()"></span>
+      </button>
+
+      <div class="collapse navbar-collapse colorBlack">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-4">
+            <a class="nav-link fontBold colorBlack" href="index.html" target="_self"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link fontBold colorBlack" href="pages/projects.html" target="_self"><i class="fas fa-suitcase mr-1"></i>PROJECTS</a>
+          </li>
+          <li class="nav-item ml-4">
+              <a class="nav-link fontBold colorBlue" href="pages/about.html" target="_self"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+            </li>
+       
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div> -->
+
+  <!-- HERO SECTION -->
+  <section id="hero-section">
+    <div class="overlay-section">
+      <div class="hero-inner container">
+        <div class="row">
+          <div class="col-sm-6 py-2">
+            <div class="hero_area_text">
+                <div class="colorBlack fontMedium fontBold  pb-4">"SMALL INTERACTIONS CAN MAKE A BIG DIFFERENCE"</div>
+                <div class="colorWhite fontLarge fontRegular mt-4">Hello world, <br>
+                  I'm Alok, a UX/UI Designer <br>based in abcdefgh</div>
+            
+              </div>
+            </div>
+            <div class="col-sm-6 d-none d-sm-block">
+              <div class="text"></div>
+              <!-- SVG GOOEY FILTER-->
+              <svg>
+                <filter id="gooey">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -8" result="gooey"></feColorMatrix>
+                  <feComposite in="SourceGraphic" in2="gooey" operator="atop"></feComposite>
+                </filter>
+              </svg>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="row">
+          <section id="section03" class="demo">
+            <a class="scroll" href="#my-latest-section"><span></span></a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section id="my-latest-section">
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 py-4">
+              <div class="colorBlue fontMedium fontBold text-center mb-3">MY LATEST</div>
+              <div class="colorGray fontLarge fontRegular text-center mb-4">Projects & Case Studies</div>
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-sm-4 mb-3">
+              <div class="card text-center card1">
+                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title colorGray fontRegular fontLargex">HairHub App Case Study</h4>
+                      <p class="card-text colorGray fontRegular fontMedium">UX/UI DESIGN</p>
+                      <a class="btn btn-outline-primary card_cta fontBold" href="#">See more</a>
+                  </div>
+
+              </div>
+          </div>
+          <div class="col-sm-4 mb-3">
+              <div class="card text-center card1">
+                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title colorGray fontRegular fontLargex">HairHub App Case Study</h4>
+                      <p class="card-text colorGray fontRegular fontMedium">UX/UI DESIGN</p>
+                      <a class="btn btn-outline-primary card_cta fontBold" href="#">See more</a>
+                  </div>
+
+              </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card text-center card1">
+                    <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title colorGray fontRegular fontLargex">HairHub App Case Study</h4>
+                        <p class="card-text colorGray fontRegular fontMedium">UX/UI DESIGN</p>
+                        <a class="btn btn-outline-primary card_cta fontBold" href="#">See more</a>
+                    </div>
+  
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="about-me-section">
+    <div class="container">
+      <div class="row py-5">
+          <div class="col-sm-4 py-2">
+              <div class="colorBlue fontMedium fontBold">ABOUT ME</div>
+            </div>
+            <div class="col-sm-8">
+             
+                <p class="colorGray fontLarge fontRegular">Hello, I’m Alok.<br>
+                    I'm a <strong>problem solver</strong> that designs user<br> experiences (<strong>UX</strong>) and user interfaces (<strong>UI</strong>) for web and mobile apps.</p>
+                <p class="colorGray fontLarge fontRegular">I have been focusing on developing new products and services, being able to work from research to production.</p>
+                  <p class="colorBlue fontBold fontSmall pt-5 read">Read more...</p>
+            </div>
+      </div>
+    </div>
+ 
+  </section>
+<hr>
+  
+  <!-- RELATED EXPERIANCE -->
+  <section id="related-exp-section">
+      <div class="container">
+        <div class="row py-5">
+ 
+                <div class="col-sm-4 pb-3">
+                    <div class="colorBlue fontMedium fontBold">EXPERIENCE</div>
+                  </div>
+                  <div class="col-sm-8">
+                      <div class="colorBlue fontMedium fontBold pb-5">RELATED EXPERIENCE</div>
+                    <div class="colorBlack">
+                      <p class="colorGray fontRegular fontMedium">UX Consultant (3 weeks unpaid) @ Own It Fit | Sep 2017 - Oct 2017</p>
+                      <p class="colorGray fontRegular fontMedium">UI/UX Designer @ Neuelabs | Jun 2013 - Mar 2015</p>
+                      <p class="colorGray fontRegular fontMedium">UI Designer @ Pontomobi | Oct 2011 - Jun 2013</p>
+                      <p class="colorBlue fontBold fontSmall pt-5 read">Read more...</p>
+              
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+  <!-- footer -->
+
+  <footer id="footer_content bg-gray">
+    <div class="container-fluid">
+        <div class="row text-center footer">
+            <div class="col-sm-12">
+              <div class="colorBlack fontBold fontMedium  my-4">CONTACT</div>
+              <div class="colorGray fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
+              <div class="colorBlack fontBold fontMedium  my-4">FIND ME</div>
+              <div class="colorBlack">
+                <a class="colorBlack" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="colorBlack" href="#"><i class="fab fa-facebook"></i></a>
+    
+              </div>
+              <div class="colorBlack fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
+            </div>
+      
+          </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="./main.js" ></script>
+
+</body>
+
+</html>
