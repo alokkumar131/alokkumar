@@ -139,11 +139,15 @@ body{
 /* HERO SECTION */
 
 #hero-section{
-  background: #ffffff;
+  background: #fe8c00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
   background-attachment: fixed;
+  margin-top: 56px;
   
 
 }
@@ -281,8 +285,8 @@ transform: scale(0,0);
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 4px solid #000;
-  border-bottom: 4px solid #000;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
