@@ -1,10 +1,14 @@
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
+    $('body').attr("scroll","no").attr("style", "overflow: hidden");
   }
   
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    $('body').css('overflow', 'auto');
+
   }
+
   function hello(){
     alert("Hii")
   }
@@ -22,13 +26,12 @@ function openNav() {
         window.location.hash = hash;
       });
     });
+
+
     $(".se-pre-con").fadeOut("slow");;
 
 
     setInterval(function(){
-
-
- 
 
 
       $("#div3").fadeOut(4000,function(){
