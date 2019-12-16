@@ -64,13 +64,13 @@
 
  /*---------------------------- NAV BAR--------------------------------- */
  .bg-dark {
-  background-color: #0032ff!important
+  background-color: #fff!important
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #0400ff;
 }
 .navbar-dark .navbar-toggler {
-  color: #ffffff;
+
   border: none;
 }
 .navbar-dark .navbar-toggler-icon {
@@ -81,8 +81,13 @@
   outline: none;
 }
 .navbar {
- border-bottom: #ffffff 5px solid;
+
  opacity: 0.8;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.nav-item a:hover,
+.nav-item a:active{
+ color:black !important;
 }
 
  

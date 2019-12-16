@@ -60,7 +60,7 @@ body{
   color: #0400ff;
 }
 .navbar-dark .navbar-toggler {
-  color: #0400ff;
+
   border: none;
 }
 .navbar-dark .navbar-toggler-icon {
@@ -75,13 +75,17 @@ body{
  opacity: 0.8;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.nav-item a:hover,
+.nav-item a:active{
+ color:black !important;
+}
 
 
 #hero-section{
   background: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 600px;
   background-attachment: fixed;
   
 
@@ -199,7 +203,7 @@ transform: scale(0,0);
 
 .demo .scroll {
   position: absolute;
-  bottom: 26px;
+  bottom: -73px;
   left: 50%;
   z-index: 2;
   display: inline-block;
