@@ -177,11 +177,13 @@ nav{
 .hero_area_text_quote1{
     letter-spacing: 15px;
     font-weight: bold;
+    font-size: 40px;
 
 }
 .hero_area_text_quote2{
   letter-spacing: 15px;
   font-weight: bold;
+  font-size: 40px;
 
 }
 .hero_area_text_subquote{
@@ -379,28 +381,26 @@ font-size: 16px;
   .hero_area_text_quote1{
     letter-spacing: 10px;
     font-weight: bold;
+    font-size:25px;
 
 }
 .hero_area_text_quote2{
   letter-spacing: 10px;
   font-weight: bold;
+  font-size:25px;
 
 }
 .hero_area_text_subquote{
   letter-spacing: 5px;
+  font-size:15px;
 
 }
 
-#hero-section .hero-inner{
-  padding-top: 141px;
-}
 
 }
 
-@media (max-height: 550px){
-#hero-section .hero-inner {
-    padding-top: 0px !important;
-}
+@media (max-height: 600px){
+
 .hero_area_button  a:link,
 .hero_area_button  a:visited
 {
@@ -410,16 +410,26 @@ font-size: 10px;
 .hero_area_text_quote1{
   letter-spacing: 10px;
   font-weight: bold;
+  font-size:25px;
 
 }
 .hero_area_text_quote2{
-letter-spacing: 10px;
-font-weight: bold;
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size:25px;
 
 }
 .hero_area_text_subquote{
-letter-spacing: 5px;
+  letter-spacing: 5px;
+  font-size:15px;
 
+}
+#hero-section .hero-inner{
+  padding-top: 5vh;
+}
+.hero_area_button {
+
+  margin-top: -30px;
 }
 }
 
