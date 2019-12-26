@@ -397,7 +397,7 @@ font-size: 16px;
 
 }
 
-@media (max-height: 600px){
+@media (max-height: 550px){
 #hero-section .hero-inner {
     padding-top: 0px !important;
 }
