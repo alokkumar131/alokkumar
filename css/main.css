@@ -1,4 +1,8 @@
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 /*----------------------- FONTS----------------------------------- */
 @font-face{
   src:url(../fonts/OpenSans-Regular.ttf);
@@ -8,18 +12,28 @@
    src:url(../fonts/OpenSans-Bold.ttf);
    font-family: fontBold;
 }
-.fontRegular{
-  font-family: fontRegular;
+
+body{
+  font-family: 'fontRegular', serif;
+  line-height: 1.7;
+  font-size: 10px;
+  color: #777;
+  background: #ffffff;
 }
 .fontBold{
-  font-family: fontBold;
+font-family: 'fontBold', sans-serif;
 }
+.fontShadow{
+  font-family: 'Rock Salt', cursive;
+  }
+
+
 /*------------------------- COLOR ----------------------------------*/
 .colorLight{
    color: #ffffff;
 }
 .colorGray{
-   color: #3d3e57;
+  color: #777;
 }
 .colorBlue{
   color:#0400ff;
@@ -29,7 +43,10 @@
 }
 
 
+
+
 /*------------------------- FONT SIZE------------------------------ */
+
 .fontSmall{
    font-size: 12px;
 }
@@ -48,11 +65,18 @@
 .font18{
   font-size: 18px;
 }
-body{
-  background: #ffffff;
-}
+
 
 /* NAV */
+nav{
+  height: 50px;
+}
+@media (max-width: 576px){
+  nav{
+    height: 50px;
+}
+}
+
 .bg-dark {
   background-color: #fff!important
 }
@@ -139,97 +163,239 @@ body{
 /* HERO SECTION */
 
 #hero-section{
-  background: #fe8c00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+   background-image: linear-gradient(rgba(50, 0, 17, 0),rgba(255, 0, 200, 0.3)), url(https://kdstudiogroup.com/wp-content/uploads/2016/02/slide01_1920x1080-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 100vh;
   background-attachment: fixed;
-  margin-top: 56px;
+  margin-top: 51px;
+ 
   
 
 }
-#hero-section .overlay-section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 500px;
+
+.hero_area_text_quote1{
+    letter-spacing: 15px;
+    font-weight: bold;
 
 }
+.hero_area_text_quote2{
+  letter-spacing: 15px;
+  font-weight: bold;
+
+}
+.hero_area_text_subquote{
+  letter-spacing: 8px;
+
+}
+
 #hero-section .hero-inner{
   padding-top: 141px;
 }
-.ux-img{
-  height: 518px;
-  width: 271px;
+
+.hero_area_button{
+  position: absolute;
+  left:50%;
+  transform: translate(-50%,-50%);
+  margin-top: 30px;
+}
+.hero_area_button  a:link,
+.hero_area_button  a:visited
+{
+   padding: 10px 20px;
+   color: #0400ff;
+   display: inline-block;
+   border: none;
+   border-radius: 100px;
+   outline: none;
+   cursor: pointer;
+   background: #fff;
+   text-decoration: none;
+position: relative;
+
+transition: all .3s;
+font-size: 16px;
+   
+}
+
+.hero_area_button  a:hover{
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+  transform: translateY(-3px);
+  
+}
+.hero_area_button  a:active{
+  box-shadow: 0px 20px 15px rgba(0,0,0,.2);
+  transform: translateY(-1px);
+  background-color: #0400ff;
+  color: #fff;
 }
 
 
-.hero_area_text{
 
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+.hero_area_text_quote1{
+
+  -webkit-animation-name: hero_text1; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
+  animation-name: hero_text1;
   animation-duration: 1s;
-  position: relative;
+
 
 
 }
-.read{
-  cursor: pointer;
+
+
+/* Standard syntax */
+@keyframes hero_text1 {
+  0%{
+    transform: translateX(-80px);
+    opacity: 1;
+}
+80%{
+  transform: translateX(10px);
+  opacity: 1;
+}
+100%{
+  transform: translateX(0px);
+  opacity: 0;
+}
+
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+@-webkit-keyframes hero_text1 {
   0%{
-    left:-900px;
-    opacity: .3;
+    transform: translateX(100px);
+    opacity: 1;
+}
+80%{
+  transform: translateX(-20px);
+  opacity: 1;
+}
+100%{
+  transform: translateX(0px);
+  opacity: 0;
+}
+}
+
+
+
+.hero_area_text_quote2{
+
+  -webkit-animation-name: hero_text2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: hero_text2;
+  animation-duration: 1s;
+
+
+
+}
+
+
+
+
+/* Standard syntax */
+@keyframes hero_text2 {
+  0%{
+    transform: translateX(80px);
+    opacity: 1;
+}
+80%{
+  transform: translateX(-10px);
+  opacity: 1;
+}
+100%{
+  transform: translateX(0px);
+  opacity: 0;
+}
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hero_text2 {
+  0%{
+    transform: translateX(80px);
+    opacity: 1;
+}
+80%{
+  transform: translateX(-10px);
+  opacity: 1;
+}
+100%{
+  transform: translateX(0px);
+  opacity: 0;
+}
+}
+
+.hero_area_text_subquote{
+  -webkit-animation-name: hero_text1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: hero_text1;
+  animation-duration: 1s;
+
+}
+
+.hero_area_button a{
+  -webkit-animation-name: hero_button; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: hero_button;
+  animation-duration: 1s;
+  animation-delay: 1.1s;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes hero_button {
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
 }
 
 100%{
-  left:0px;
+  transform: translateX(0px);
   opacity: 1;
 }
 }
 
-/* Standard syntax */
-@keyframes example {
-    0%{
-        left:-900px;
-        opacity: .3;
-    }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hero_text2 {
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
+}
 
-  100%{
-      left:0px;
-      opacity: 1;
+100%{
+  transform: translateX(0px);
+  opacity: 1;
+}
+}
+
+@media (max-width: 576px){
+  .hero_area_button  a:link,
+  .hero_area_button  a:visited
+  {
+  font-size: 10px;
+     
   }
+  .hero_area_text_quote1{
+    letter-spacing: 10px;
+    font-weight: bold;
 
 }
-.ux-img{
-  -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-  animation-name: example2;
-  animation-duration: 1s;
+.hero_area_text_quote2{
+  letter-spacing: 10px;
+  font-weight: bold;
 
-  transform: scale(518px,271px);
 }
-
-@keyframes example2 {
-    0%{
-transform: scale(0,0);
-    }
-
-  100%{
-      transform: scale(518px,271px);
-  }
+.hero_area_text_subquote{
+  letter-spacing: 5px;
 
 }
 
+#hero-section .hero-inner{
+  padding-top: 141px;
+}
 
-
+}
 
 
 @media (max-width: 576px){
