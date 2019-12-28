@@ -24,7 +24,7 @@ body{
 font-family: 'fontBold', sans-serif;
 }
 .fontShadow{
-  font-family: 'Rock Salt', cursive;
+  font-family:  cursive;
   }
 
 
@@ -103,7 +103,11 @@ nav{
 .nav-item a:active{
  color:black !important;
 }
-
+.navbar-brand {
+  font-size: 0px !important;
+  line-height: inherit;
+  white-space: nowrap;
+}
 
 /* OVERLAY */
 
@@ -425,7 +429,7 @@ font-size: 10px;
 
 }
 #hero-section .hero-inner{
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 .hero_area_button {
 
@@ -545,4 +549,11 @@ font-size: 10px;
   99.9999% {
     content: "UX";
   }
+}
+
+.readmore a:link,
+.readmore a:visited,
+.readmore a:active
+{
+  text-decoration: none;
 }
