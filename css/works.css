@@ -623,4 +623,15 @@
       visibility: visible;
     }
   }
-  
+  .carousel-control-prev-icon {
+    background-image: url(../img/arrow-circle-left-solid.svg);
+    color: #0400ff;
+    height: 39px;
+    width: 66px;
+}
+.carousel-control-next-icon {
+  background-image: url(../img/arrow-circle-right-solid.svg);
+  color: #0400ff;
+  height: 39px;
+  width: 66px;
+}
