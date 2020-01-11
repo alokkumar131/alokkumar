@@ -17,34 +17,7 @@
 <body>
     <div class="se-pre-con"></div>
   <!-- NAV MENU -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand colorLight fontBold px-1" href="#">
-        <img src="./img/ak.png" alt="" width="50" height="28">
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon" onclick="openNav()"></span>
-      </button>
 
-      <div class="collapse navbar-collapse fontSmall fontBold">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="index.html" target="_self"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="pages/works.html" target="_self"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="pages/projects.html" target="_self"><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
-          </li>
-          <li class="nav-item ml-4">
-              <a class="nav-link colorBlue" href="pages/about.html" target="_self"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
-            </li>
-       
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div id="myNav" class="overlay d-none-sm d-block">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -57,29 +30,58 @@
 
   <!-- HERO SECTION -->
   <section id="hero-section">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="padding-top: 59px;  background-color: #ffffff00;">
+      <div class="container">
+        <a class="navbar-brand colorLight fontBold px-1" href="#">
+          <img src="./img/ak.png" alt="" width="50" height="28">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon" onclick="openNav()"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse fontSmall fontBold">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-4">
+              <a class="nav-link colorBlack" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link colorBlack" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link colorBlack" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link colorBlue" href="pages/about.html" target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+              </li>
+         
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="overlay-section">
       <div class="hero-inner container">
+        
         <div class="row">
           <div class="col-sm-12">
-            <div class="hero_area_text text-center py-1">
-                <div class="hero_area_text_quote1 colorLight  fontShadow pt-4" style="color:#ffffff;">
-                  ALOK KUMAR</div>
+            <div class="hero_area_text text-center">
+                <div class="hero_area_text_quote1 colorLight " style="color:#ffffff;">
+                  <h1>ALOK KUMAR</h1>
+                </div>
 
 
-                <div class="hero_area_text_subquote colorLight fontMedium fontBold my-4" style="color:#ffffff;">A UI/UX DESIGNER</div>
+                <div class="hero_area_text_subquote colorLight" style="color:#ffffff;">
+                  <p>A UI/UX Designer Based On Hyderabad</p></div>
+                <div class="hero_button pt-4">
+                  <a class="herobtn">See My Works</a>
+                </div>
 
       
               </div>
-              <!-- <div class="hero_area_button text-center pt-5">
-                <a href="#my-latest-section" class="scroll mt-5 colorBlue fontBold ">FIND MY WORKS</a href="#">
-              </div> -->
+
+
           
 
             </div>
-            <!-- <div class="col-sm-6">
-              <img src="https://cdn.dribbble.com/users/273277/screenshots/4670918/review_shop_concept_design_ui_dark_ux.gif" height="300" width="500" alt="">
-            </div> -->
-
           </div>
 
 
@@ -205,7 +207,9 @@
   <script src="./packages/jquery.js"></script>
   <script src="./packages/popper.min.js"></script>
   <script src="./packages/bootstrap.min.js"></script>
+  <script src="./packages/jquery.waypoints.min.js"></script>
   <script src="./main.js" ></script>
+
 
 </body>
 
