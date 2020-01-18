@@ -2,211 +2,596 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-  <link rel="stylesheet" href="../packages/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/works.css">
-  <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-  <title>Alok</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="../packages/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <title>Alok</title>
 
 </head>
 
 <body>
-    <div class="se-pre-con"></div>
-  <!-- NAV MENU -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand colorLight fontBold px-1" href="../index.html">
-        <img src="../img/ak.png" alt="" width="50" height="28">
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon" onclick="openNav()"></span>
-      </button>
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand colorLight fontBold px-1" href="../index.html">
+                <img src="../img/logo.png" alt="" width="50" height="28">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
 
-      <div class="collapse navbar-collapse fontSmall fontBold">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="../index.html" target="_self"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="../pages/works.html" target="_self"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link colorBlack" href="../pages/projects.html" target="_self"><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
-          </li>
-          <li class="nav-item ml-4">
-              <a class="nav-link colorBlue" href="../pages/about.html" target="_self"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
-            </li>
-       
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse fontSmall fontBold">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_link" href="#" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../pages/projects.html" target="_self" style="color: #ffffff;"><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlue active_hover" href="../pages/about.html"	 target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="myNav" class="overlay d-none-sm d-block">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
+            <a href="#"><i class="fas fa-toolbox mr-1"></i>MyWorks</a>
+            <a href="../pages/projects.html"><i class="fas fa-suitcase mr-1"></i>Projects</a>
+            <a href="../pages/about.html"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+        </div>
     </div>
-  </nav>
-  <div id="myNav" class="overlay d-none-sm d-block">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
-      <a href="./pages/projects.html"><i class="fas fa-toolbox mr-1"></i>MyWorks</a>
-      <a href="./pages/projects.html"><i class="fas fa-suitcase mr-1"></i>Projects</a>
-      <a href="./pages/about.html"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+
+    <!-- HERO SECTION -->
+
+    <div id="worktabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 pt-5">
+                    <div class=" portfolio_header colorBlue fontLarge fontShadow text-center mt-5">Portfolio projects</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 py-5 text-center">
+                    <div class="nav flex-column nav-pills sticky" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active colorBlue fontMedium fontBold" id="v-pills-html-tab" data-toggle="pill" href="#v-pills-html" role="tab" aria-controls="v-pills-home" aria-selected="true">HTML/CSS</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-bs-tab" data-toggle="pill" href="#v-pills-bs" role="tab" aria-controls="v-pills-profile" aria-selected="false">BOOTSTRAP</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-mt-tab" data-toggle="pill" href="#v-pills-mt" role="tab" aria-controls="v-pills-messages" aria-selected="false">MATERIALIZE</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-ps-tab" data-toggle="pill" href="#v-pills-ps" role="tab" aria-controls="v-pills-settings" aria-selected="false">PHOTOSHOP</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-xd-tab" data-toggle="pill" href="#v-pills-xd" role="tab" aria-controls="v-pills-settings" aria-selected="false">INDESIGN</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-il-tab" data-toggle="pill" href="#v-pills-il" role="tab" aria-controls="v-pills-settings" aria-selected="false">ILLUSTATOR</a>
+                        <a class="nav-link colorBlue fontMedium fontBold" id="v-pills-id-tab" data-toggle="pill" href="#v-pills-id" role="tab" aria-controls="v-pills-settings" aria-selected="false">ADOBE XD</a>
+                    </div>
+                </div>
+                <div class="col-sm-9 py-5 text-center">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">
+                            <div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+								                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+								                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+								
+
+							
+                            </div>
+							<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container"></div>	
+								</div>
+							</div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-bs" role="tabpanel" aria-labelledby="v-pills-bs-tab">
+
+                           <div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+														<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container2"></div>	
+								</div>
+							</div>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-mt" role="tabpanel" aria-labelledby="v-pills-mt-tab">
+						<div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+														<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container3"></div>	
+								</div>
+							</div>
+						</div>
+                        <div class="tab-pane fade" id="v-pills-ps" role="tabpanel" aria-labelledby="v-pills-ps-tab">
+						<div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+																					<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container4"></div>	
+								</div>
+							</div>
+							
+						</div>
+                        <div class="tab-pane fade" id="v-pills-xd" role="tabpanel" aria-labelledby="v-pills-xd-tab">
+						<div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+												<a data-toggle="modal" data-target="#myModal">
+                                    <div class="card text-center card1">
+
+                                        <img src="../img/gg.png" alt="saas" class="card-img-top img-fluid" />
+					
+							
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI ESIGN</p>
+                                        </div>
+
+                                    </div>
+									</a>
+                                </div>
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+        <div class="modal-body">
+            <img src="../img/gg.png" class="img-fluid">
+        </div>
+		        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
     </div>
   </div>
+</div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
 
-  <!-- HERO SECTION -->
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
 
-  <section id="my-latest-section">
-    <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 pt-5">
-              <div class=" portfolio_header colorBlue fontLarge fontShadow text-center mt-5">Portfolio projects</div>
-          </div>
-        </div>
-        <div class="row">
-                <div class="col-sm-12 pb-5">
-                    <div class="colorBlue fontLargex fontShadow text-center mt-5" >UI Designs</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+																					<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container5"></div>	
+								</div>
+							</div>
+						</div>
+                        <div class="tab-pane fade" id="v-pills-il" role="tabpanel" aria-labelledby="v-pills-li-tab">
+						<div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+																					<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container6"></div>	
+								</div>
+							</div>
+						</div>
+                        <div class="tab-pane fade" id="v-pills-id" role="tabpanel" aria-labelledby="v-pills-id-tab">
+						<div class="row pb-5">
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 mb-3">
+                                    <div class="card text-center card1">
+                                        <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
+                                        <div class="card-body">
+                                            <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+																					<div class="row ">
+								<div class="col-sm-12 mb-3">
+									<div id="pagination-container7"></div>	
+								</div>
+							</div>
+						</div>
+                    </div>
                 </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                    <div class="work_title fontBold fontMedium colorBlue mb-4">HTML TEMPLATES</div>
             </div>
         </div>
-        <div class="row pb-5">
 
-     
-          <div class="container-fluid">
-        
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner row w-100 mx-auto">
-                <div class="carousel-item col-md-4 active">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/natours.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 1</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/monalisa.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 2</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/natours.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 1</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/monalisa.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 2</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/natours.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 1</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/monalisa.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 2</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-md-4">
-                  <div class="card text-center">
-                    <img class="card-img-top img-fluid" src="../img/natours.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card 1</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </div>
 
-  </section>
+    <!-- footer -->
 
+    <footer id="footer_content fixed-bottom">
+        <div class="container-fluid">
+            <div class="row text-center footer">
+                <div class="col-sm-12">
+                    <div class="colorLight  fontMedium  my-4">CONTACT</div>
+                    <div class="colorLight fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
+                    <div class="colorLight fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
+                </div>
 
-
-
-    
-
-
-  <!-- footer -->
-
-  <footer id="footer_content bg-gray">
-    <div class="container-fluid">
-        <div class="row text-center footer">
-            <div class="col-sm-12">
-              <div class="colorBlack fontBold fontMedium  my-4">CONTACT</div>
-              <div class="colorGray fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
-              <div class="colorBlack fontBold fontMedium  my-4">FIND ME</div>
-              <div class="colorBlack">
-                <a class="colorBlack" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="colorBlack" href="#"><i class="fab fa-facebook"></i></a>
-    
-              </div>
-              <div class="colorBlack fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
             </div>
-      
-          </div>
-    </div>
+        </div>
 
-  </footer>
+    </footer>
 
-
-
-  <script src="../packages/jquery.js"></script>
-  <script src="../packages/popper.min.js"></script>
-  <script src="../packages/bootstrap.min.js"></script>
-  <script src="../main.js" ></script>
+    <script src="../packages/jquery.js"></script>
+    <script src="../packages/popper.min.js"></script>
+    <script src="../packages/bootstrap.min.js"></script>
+    <script src="../packages/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+    <script src="../main.js"></script>
 
 </body>
 

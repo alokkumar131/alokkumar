@@ -8,69 +8,61 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link rel="stylesheet" href="../packages/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/about.css">
   <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
   <title>Alok</title>
 
 </head>
 
 <body>
-  <div class="se-pre-con"></div>
-  <!-- NAV MENU -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand colorLight fontBold px-1" href="../index.html">
-        <img src="../img/ak.png" alt="" width="50" height="28">
-      </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon" onclick="openNav()"></span>
-      </button>
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand colorLight fontBold px-1" href="../index.html">
+                <img src="../img/logo.png" alt="" width="50" height="28">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
 
-      <div class="collapse navbar-collapse colorBlack">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-4">
-            <a class="nav-link fontBold colorBlack" href="../index.html" target="_self"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link fontBold colorBlack" href="./projects.html" target="_self"><i class="fas fa-suitcase mr-1"></i>PROJECTS</a>
-          </li>
-          <li class="nav-item ml-4">
-              <a class="nav-link fontBold colorBlue" href="./about.html" target="_self"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
-            </li>
-       
-        </ul>
-      </div>
+            <div class="collapse navbar-collapse fontSmall fontBold">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../pages/projects.html" target="_self" style="color: #ffffff;"><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlue active_link" href="#"	 target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myNav" class="overlay d-none-sm d-block">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
+            <a href="../pages/works.html"><i class="fas fa-toolbox mr-1"></i>My Works</a>
+            <a href="../pages/projects.html"><i class="fas fa-suitcase mr-1"></i>Projects</a>
+            <a href="#"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+        </div>
     </div>
-  </nav>
-
-
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="../index.html">Home</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./about.html">About</a>
-    </div>
-  </div>
 
 
   <div id="section04" class="container demo">
  
 
-      <div class="row mt-5">
-
-        <div class="col-sm-4 col-md-4 col-lg-3">
-
-          <div class="colorBlack font18 mt-5 fontBold headername text-center">ALOK KUMAR</div>
-
-        </div>
-
-      </div>
-
-      <div class="row mt-5">
+      <div class="row">
 
         <div class="col-sm-12 col-md-4 col-lg-3 ">
-          <img src="../img/profie.png" class="rounded-circle z-depth-2 d-block mx-auto mx-md-0" height="250" width="250" alt="Cinque Terre">
+          <img src="../img/download.png" class="rounded-circle z-depth-2 d-block mx-auto mx-md-0" height="250" width="250" alt="Cinque Terre">
         </div>
         <div class="col-sm-12 col-md-8 col-lg-9 ">
           <div class="colorBlue font18 fontBold mb-2 ">MY LATEST</div>
@@ -150,66 +142,21 @@
       <div class="col-sm-9">
         <div class="colorBlue font18 fontBold mb-5">RELATED EXPERIENCE</div>
         <div class="colorBlack">
-          <p class="colorGray fontRegular font18 ">UX Consultant (3 weeks unpaid) @ Own It Fit | Sep 2017 - Oct 2017
+          <p class="colorGray fontRegular font18 ">UI/UX Designer @ TechMahindra | Oct 2018 - Mar 2020
           </p>
-          <p class="colorGray fontRegular font18 ">UI/UX Designer @ Neuelabs | Jun 2013 - Mar 2015</p>
-          <p class="colorGray fontRegular font18 ">UI Designer @ Pontomobi | Oct 2011 - Jun 2013</p>
-          <p class="colorGray fontRegular font18 ">UX Consultant (3 weeks unpaid) @ Own It Fit | Sep 2017 - Oct 2017
-          </p>
-          <p class="colorGray fontRegular font18 ">UI/UX Designer @ Neuelabs | Jun 2013 - Mar 2015</p>
-          <p class="colorGray fontRegular font18 ">UI Designer @ Pontomobi | Oct 2011 - Jun 2013</p>
-          <p class="colorBlue fontBold font18  mt-5">Find more on Linkedin..</p>
 
         </div>
       </div>
     </div>
     <hr>
-    <div class="row my-5">
-      <div class="col-sm-3">
-        <div class="colorBlue font18 fontBold">GALLERY</div>
-      </div>
-      <div class="col-sm-9 gallary mt-1">
-        <div class="row">
-          <div class="col-sm-4 mb-4">
-            <img src="../img/FullSizeRender+2.jpg" alt="" srcset="" height="auto" width="100%">
-          </div>
-          <div class="col-sm-4 mb-4">
-            <img src="../img/FullSizeRender+2.jpg" alt="" srcset="" height="auto" width="100%">
-          </div>
-          <div class="col-sm-4 mb-4 ">
-            <img src="../img/FullSizeRender+2.jpg" alt="" srcset="" height="auto" width="100%">
-          </div>
-          <div class="col-sm-4 mb-4">
-              <img src="../img/FullSizeRender+2.jpg" alt="" srcset="" height="auto" width="100%">
-            </div>
-            <div class="col-sm-4  mb-4">
-                <img src="../img/FullSizeRender+2.jpg" alt="" srcset="" height="auto" width="100%">
-              </div>
-              <div class="col-sm-4 ">
-                  <img src="../img/FullSizeRender+2.jpg" alt="" srcset=""height="auto" width="100%">
-                </div>
-
-        </div>
 
 
-
-
-      </div>
-    </div>
-    <hr>
     <div class="row">
 
-      <div class="col-sm-9 offset-sm-3 my-5">
-        <div class="colorBlue fontLarge fontRegular mb-3">Get in touch</div>
-        <div class="colorBlack mt-4">
-          <p class="colorGray fontRegular fontSmall">email: jsueko(at)gmail.com</p>
-          <p class="colorGray fontRegular fontSmall"><a href="#">my full profile on Linkedin</a></p>
-          <p class="colorGray fontRegular fontSmall">Follow me: <a href="#">Behence</a></p>
+      <div class="col-sm-9 offset-sm-3 mt-3 mb-5">
+        <div class="colorBlue fontLarge fontRegular mb-1">Get in touch</div>
 
-
-
-        </div>
-        <div class="colorBlue font18 fontBold my-5">PLEASE COMPLETE THE FORM BELOW</div>
+        <div class="colorBlue font18 fontBold mb-5 mt-2">PLEASE COMPLETE THE FORM BELOW</div>
         <div>
           <form action="">
             <div class="row">
@@ -254,25 +201,21 @@
 
 
 
-  <div class="footer_content">
-    <div class="container-fluid">
-      <div class="row text-center footer">
-        <div class="col-sm-12">
-          <div class="colorBlack fontBold fontMedium  my-4">CONTACT</div>
-          <div class="colorGray fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
-          <div class="colorBlack fontBold fontMedium  my-4">FIND ME</div>
-          <div class="colorBlack">
-            <a class="colorBlack" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="colorBlack" href="#"><i class="fab fa-facebook"></i></a>
+    <!-- footer -->
 
-          </div>
-          <div class="colorBlack fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
+    <footer id="footer_content fixed-bottom">
+        <div class="container-fluid">
+            <div class="row text-center footer">
+                <div class="col-sm-12">
+                    <div class="colorLight  fontMedium  my-4">CONTACT</div>
+                    <div class="colorLight fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
+                    <div class="colorLight fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
+                </div>
+
+            </div>
         </div>
 
-      </div>
-    </div>
-
-  </div>
+    </footer>
 
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

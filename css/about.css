@@ -1,4 +1,8 @@
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 /*----------------------- FONTS----------------------------------- */
 @font-face{
   src:url(../fonts/OpenSans-Regular.ttf);
@@ -8,28 +12,41 @@
    src:url(../fonts/OpenSans-Bold.ttf);
    font-family: fontBold;
 }
-.fontRegular{
-  font-family: fontRegular;
+
+body{
+  font-family: 'fontRegular', serif;
+  line-height: 1.7;
+  font-size: 10px;
+  background-color: #f9fafa;
+
 }
 .fontBold{
-  font-family: fontBold;
+font-family: 'fontBold', sans-serif;
 }
+/* .fontShadow{
+  font-family:  cursive;
+  } */
+
+
 /*------------------------- COLOR ----------------------------------*/
 .colorLight{
    color: #ffffff;
 }
 .colorGray{
-   color: #3d3e57;
+  color: #808080;
 }
 .colorBlue{
-  color:#053fff;
+  color:#020251;
 }
 .colorBlack{
   color: #000000;
 }
 
 
+
+
 /*------------------------- FONT SIZE------------------------------ */
+
 .fontSmall{
    font-size: 12px;
 }
@@ -49,79 +66,99 @@
   font-size: 18px;
 }
 
-
-*{
-   margin: 0;
-   padding: 0;
+  
+  /* NAV */
+nav{
+  height: 50px;
+  padding-bottom: 0px;
+	background: #020251;
+  z-index: 9;
 }
-body {
-
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-
+@media (max-width: 576px){
+  nav{
+    height: 50px;
+    padding-bottom: 0px;
+}
 }
 
 
-/*---------------------------- NAV BAR--------------------------------- */
-.bg-dark {
-background-color: #fff!important
-}
 .navbar-dark .navbar-nav .nav-link {
-color: #0400ff;
+  color:#ffffff
 }
 .navbar-dark .navbar-toggler {
 
-border: none;
+  border: none;
 }
 .navbar-dark .navbar-toggler-icon {
-background-image: url(https://img.icons8.com/ios-filled/50/000000/menu.png);
+  background-image: url(https://img.icons8.com/ios-filled/50/ffffff/menu.png);
 }
 .navbar-toggler:not(:disabled):not(.disabled) {
-cursor: pointer;
-outline: none;
+  cursor: pointer;
+  outline: none;
 }
-.navbar {
-
-opacity: 0.8;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+.navbar {opacity: 0.8;}
 .nav-item a:hover,
 .nav-item a:active{
-color:black !important;
+ color:rgb(233, 233, 233) !important;
+}
+.navbar-brand {
+  font-size: 0px !important;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.active_link{
+	border-bottom: 2px solid #fff;
+}
+.active_hover:hover{
+	border-bottom: 2px solid #fff;
+}
+#section04{
+	padding-top: 111px;
+}
+ 
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9990;
+  top: 0px;
+  left: 0;
+  background-color: #020251;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #585858;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 26px;
+  right: 18px;
+  font-size: 60px;
 }
 
 
-.overlay {height: 100%;width: 0;position: fixed;z-index: 1;top: 0px;left: 0;background-color: rgb(0, 0, 0);background-color: rgb(0, 0, 0);overflow-x: hidden;transition: 0.5s;}
- 
- .overlay-content {
-   position: relative;
-   top: 25%;
-   width: 100%;
-   text-align: center;
-   margin-top: 30px;
- }
- 
- .overlay a {
-   padding: 8px;
-   text-decoration: none;
-   font-size: 36px;
-   color: #f1f1f1;
-   display: block;
-   transition: 0.3s;
- }
- 
- .overlay a:hover, .overlay a:focus {
-   color: #585858;
- }
- 
- .overlay .closebtn {
-   position: absolute;
-   top: 26px;
-   right: 18px;
-   font-size: 60px;
- }
- 
- @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
@@ -281,9 +318,16 @@ color:black !important;
     border-color:#053fff;
 }
 
+  
+
+
+/* FOOTER */
 .footer{
-    background-color:rgb(248, 248, 249);
+  background-color: #020251;
 }
+
+  
+  
 
 .hero_area{
   margin-top: 130px;

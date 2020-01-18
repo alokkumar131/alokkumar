@@ -15,168 +15,106 @@
 </head>
 
 <body>
-    <div class="se-pre-con"></div>
-  <!-- NAV MENU -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand colorLight fontBold px-1" href="#">NAV</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon" onclick="openNav()"></span>
-      </button>
 
-      <div class="collapse navbar-collapse ">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-5">
-            <a class="nav-link fontLight fontSmall" href="../index.html" target="_self">HOME</a>
-          </li>
-          <li class="nav-item ml-5">
-            <a class="nav-link fontLight fontSmall" href="/pages/projects.html" target="_self">PROJECTS</a>
-          </li>
-          <li class="nav-item ml-5">
-              <a class="nav-link fontLight fontSmall" href="/pages/about.html" target="_self">ABOUT</a>
-            </li>
-       
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+    <!-- NAV MENU -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand colorLight fontBold px-1" href="../index.html">
+                <img src="../img/logo.png" alt="" width="50" height="28">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            </button>
 
-  <!-- HERO SECTION -->
-  <header id="main_header">
-    <div class="dark_overlay">
-      <div class="main_header_inner container">
+            <div class="collapse navbar-collapse fontSmall fontBold">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_hover" href="../pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlack active_link" href="#" target="_self" style="color: #ffffff;"><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+                    </li>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link colorBlue active_hover" href="../pages/about.html"	 target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+                    </li>
 
-        <div class="row hero_area">
-            <div class="col-sm-8 mt-5 hero_area_text">
-              <div class="colorWhite fontMedium fontBold my-5">"SMALL INTERACTIONS CAN MAKE A BIG DIFFERENCE"</div>
-              <div class="colorWhite fontXLarge fontRegular mt-4">Hello world, <br>
-                  I'm Alok, a UX/UI Designer <br>based in abcdefgh</div>
-            
-              </div>
-          <div class="col-sm-4 hero_area_mbl">
-            <img class="img-fluid" src="./img/fc750145475317.5876a41390f64.gif">
-          </div>
-
-        </div>
-        <div class="row">
-          <section id="section03" class="demo">
-            <a class="scroll" href="#section04"><span></span></a>
-          </section>
-        </div>
-
-      </div>
-    </div>
-  </header>
-  <div id="section04" class="container demo">
-    <div class="row my_latest my-5">
-      <div class="col-sm-12 mt-4">
-        <div class="colorBlue fontMedium fontBold text-center mb-3">MY LATEST</div>
-        <div class="colorGray fontLarge fontRegular text-center mb-4">Projects & Case Studies</div>
-        <div class="row">
-          <div class="col-sm-4">
-              <div class="card text-center card1 mb-3">
-                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
-                  <div class="card-body">
-                      <h4 class="card-title colorGray fontRegular fontLargex">HairHub App Case Study</h4>
-                      <p class="card-text colorGray fontRegular fontMedium">UX/UI DESIGN</p>
-                      <a class="btn btn-dark card_cta fontBold" href="#">See more</a>
-                  </div>
-
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="card text-center card2 mb-3">
-                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
-                  <div class="card-body">
-                      <h4 class="card-title colorGray fontRegular fontLargex">Own It Fit Case Study</h4>
-                      <p class="card-text colorGray fontRegular fontMedium">UX/UI DESIGN</p>
-                      <a class="btn btn-dark card_cta fontBold" href="#">See more</a>
-                  </div>
-
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="card text-center card3 mb-3">
-                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/301x200" alt="">
-                  <div class="card-body">
-                      <h4 class="card-title colorGray fontRegular fontLargex">MoveMundo</h4>
-                      <p class="card-text colorGray fontRegular fontMedium">UI DESIGN</p>
-                      <a class="btn btn-dark card_cta fontBold" href="#">See more</a>
-                  </div>
-
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-<div class="row  my-5">
-  <div class="col-sm-4">
-    <div class="colorBlue fontMedium fontBold mt-3">ABOUT ME</div>
-  </div>
-  <div class="col-sm-8">
-   
-      <p class="colorGray fontLarge fontRegular">Hello, I’m Alok.<br>
-          I'm a <strong>problem solver</strong> that designs user<br> experiences (<strong>UX</strong>) and user interfaces (<strong>UI</strong>) for web and mobile apps.</p>
-      <p class="colorGray fontLarge fontRegular">I have been focusing on developing new products and services, being able to work from research to production.</p>
-        <p class="colorBlue fontBold fontSmall mt-5">Read more...</p>
-  </div>
-</div>
-<hr>
-<div class="row my-5">
-    <div class="col-sm-4">
-      <div class="colorBlue fontMedium fontBold">EXPERIENCE</div>
-    </div>
-    <div class="col-sm-8">
-        <div class="colorBlue fontMedium fontBold mb-5">RELATED EXPERIENCE</div>
-      <div class="colorBlack">
-        <p class="colorGray fontRegular fontMedium">UX Consultant (3 weeks unpaid) @ Own It Fit | Sep 2017 - Oct 2017</p>
-        <p class="colorGray fontRegular fontMedium">UI/UX Designer @ Neuelabs | Jun 2013 - Mar 2015</p>
-        <p class="colorGray fontRegular fontMedium">UI Designer @ Pontomobi | Oct 2011 - Jun 2013</p>
-        <p class="colorBlue fontBold fontSmall mt-5">Read more...</p>
-
-      </div>
-    </div>
-  </div>
-    
-  </div>
-
-
-  <div class="footer_content">
-    <div class="container-fluid">
-        <div class="row text-center footer">
-            <div class="col-sm-12">
-              <div class="colorBlack fontBold fontMedium  my-4">CONTACT</div>
-              <div class="colorGray fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
-              <div class="colorBlack fontBold fontMedium  my-4">FIND ME</div>
-              <div class="colorBlack">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
-                      </li>
-                      </li>
-                    </ul>
-              </div>
-              <div class="colorBlack fontRegular fontSmall my-5">&copy; 2020 by Alok Kumar</div>
+                </ul>
             </div>
-      
-          </div>
+        </div>
+    </nav>
+    <div id="myNav" class="overlay d-none-sm d-block">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
+            <a href="../pages/works.html"><i class="fas fa-toolbox mr-1"></i>My Works</a>
+            <a href="#"><i class="fas fa-suitcase mr-1"></i>Projects</a>
+            <a href="../pages/about.html"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+        </div>
     </div>
 
+  <div id="projects_section" class="container demo">
+             <div class="row">
+                <div class="col-sm-12">
+                    <div class=" portfolio_header colorBlue fontLarge fontShadow text-center">Projects</div>
+                </div>
+            </div>
+
+
+      <div class="row pt-5">
+
+
+		  
+        <div class="col-sm-6">
+					            <div class="colorBlue font18 fontBold mb-4 ">#PROJECT 1</div>
+          <img src="../img/mac.png" class="img-fluid" height="auto" width="400" alt="Mac">
+        </div>
+		          <div class="col-sm-6  text-center">
+          <div class="colorBlue font18 fontBold pt-5 ">UI/UX DESIGN</div>
+          <div class="colorBlue fontLarge fontRegular mb-3">HairHub App</div>
+          <p class="colorGray font18 fontRegular">I am a multidisciplinary designer that create designs that are
+            functional, meaningful and beautiful in Sydney.</p>
+					              <a href="../img/Preloader_10.gif" download>
+              <button class="btn cvbtn fontBold fontSmall text-white mt-3 mb-5" type="button">DOWNLOAD CV</button>
+
+            </a>
+        </div>
+      </div>
+    
+
+      <div class="row pt-5">
+
+
+		  
+
+		          <div class="col-sm-6  text-center">
+          <div class="colorBlue font18 fontBold pt-5 ">UI/UX DESIGN</div>
+          <div class="colorBlue fontLarge fontRegular mb-3">HairHub App</div>
+          <p class="colorGray font18 fontRegular">I am a multidisciplinary designer that create designs that are
+            functional, meaningful and beautiful in Sydney.</p>
+					              <a href="../img/Preloader_10.gif" download>
+              <button class="btn cvbtn fontBold fontSmall text-white mt-3 mb-5" type="button">DOWNLOAD CV</button>
+
+            </a>
+        </div>
+		  
+		          <div class="col-sm-6">
+					            <div class="colorBlue font18 fontBold mb-4 ">#PROJECT 2</div>
+          <img src="../img/android.png" class="img-fluid" height="auto" width="600" alt="Mac">
+        </div>
+      </div>
+
+
+
+
+
+
   </div>
+
+
+
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"

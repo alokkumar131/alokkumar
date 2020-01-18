@@ -105,6 +105,12 @@ nav{
   line-height: inherit;
   white-space: nowrap;
 }
+.active_link{
+	border-bottom: 2px solid #fff;
+}
+.active_hover:hover{
+	border-bottom: 2px solid #fff;
+}
 
 
 /* FAB */
@@ -196,7 +202,10 @@ nav{
 /* HERO SECTION */
 
 #hero-section{
-   background-image:linear-gradient(to top,#00000010, #000050),url(../img/domenico-loia-EhTcC9sYXsw-unsplash.jpg);
+
+	background:linear-gradient(to top,#00000010, #000050),url(../img/domenico-loia-EhTcC9sYXsw-unsplash.jpg);
+		background-image: url("../img/bg_IE.png");
+
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;

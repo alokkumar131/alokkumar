@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link rel="stylesheet" href="./packages/bootstrap.min.css">
 
@@ -34,7 +35,7 @@
   </div>
 
   <!-- HERO SECTION -->
-  <section id="hero-section">
+  <section id="hero-section" >
     <nav class="navbar navbar-expand-sm navbar-dark" style="padding-top: 59px;  background-color: #ffffff00;">
       <div class="container">
         <a class="navbar-brand colorLight fontBold px-1" href="#">
@@ -47,16 +48,16 @@
         <div class="collapse navbar-collapse fontSmall fontBold">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ml-4">
-              <a class="nav-link colorBlack" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+              <a class="nav-link colorBlack active_link" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
             </li>
             <li class="nav-item ml-4">
-              <a class="nav-link colorBlack" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+              <a class="nav-link colorBlack active_hover" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
             </li>
             <li class="nav-item ml-4">
-              <a class="nav-link colorBlack" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+              <a class="nav-link colorBlack active_hover" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
             </li>
             <li class="nav-item ml-4">
-                <a class="nav-link colorBlue" href="pages/about.html" target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+                <a class="nav-link colorBlue active_hover" href="pages/about.html" target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
               </li>
          
           </ul>
@@ -94,7 +95,7 @@
         </div>
 
       </div>
-    </div>
+  
   </section>
 
 
@@ -112,7 +113,7 @@
               <div class="card text-center card1">
                   <img class="card-img-top img-fluid" src="https://dummyimage.com/640x360/fff/aaa" alt="">
                   <div class="card-body">
-                      <h4 class="card-title colorLight fontRegular fontLargex">HairHub App Case Study</h4>
+                      <h4 class="card-title colorLight fontRegular fontLargex">Ticketing tool</h4>
                       <p class="card-text colorLight fontRegular fontMedium">UX/UI DESIGN</p>
                       <div class="hero_button pt-4">
                         <a class="herobtn fontRegular">SEE MORE</a>
@@ -211,7 +212,15 @@
   <script src="./packages/jquery.waypoints.min.js"></script>
   <script src="./main.js" ></script>
 
-
+<script>
+	if(navigator.userAgent.match(/Trident\/7\./)) {
+  document.body.addEventListener("mousewheel", function() {
+    event.preventDefault();
+    var wd = event.wheelDelta;
+    var csp = window.pageYOffset;
+    window.scrollTo(0, csp - wd);
+  });
+}</script>
 </body>
 
 </html>
