@@ -203,9 +203,9 @@ nav{
 
 #hero-section{
 
-	background:linear-gradient(to top,#00000010, #000050),url(../img/domenico-loia-EhTcC9sYXsw-unsplash.jpg);
-		background-image: url("../img/bg_IE.png");
-
+	background:linear-gradient(to top,#00000010, #000050),url(../img/domenico-loia-EhTcC9sYXsw-unsplash2.jpg);
+	background-image: url("../img/bg_IE.png");
+  background-image: url(../img/bg_IE.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;

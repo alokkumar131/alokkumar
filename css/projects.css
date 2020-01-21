@@ -167,12 +167,15 @@ nav{
 
 #projects_section
 {
-	padding-top: 111px;
+	padding-top: 70px;
 }
 
 .cvbtn{
-    background: #053fff;
+    background: #020251;
     color: #ffffff;
-    letter-spacing: 4px;
     outline: none;
+}
+/* FOOTER */
+.footer{
+  background-color: #020251;
 }
