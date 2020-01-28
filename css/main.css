@@ -242,6 +242,37 @@ margin-top: 51px;
   letter-spacing: 8px;
 
 }
+
+.herobtn1
+{
+   background-color: #020251a3;
+   border: 1px solid white;
+   padding: 10px 40px;
+   border-radius: 27px;
+   outline: none;
+   color: #ffffff !important;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all .2s;
+
+}
+.herobtn1:hover
+{
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+  transform: translateY(-3px);
+  background-color: #02025161;
+  text-decoration: none;
+
+
+}
+.herobtn1:active{
+  box-shadow: 0px 20px 15px rgba(0,0,0,.2);
+  transform: translateY(-1px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+  color: #fff;
+  text-decoration: none;
+}
 .herobtn
 {
    background-color: #020251a3;
@@ -351,7 +382,7 @@ margin-top: 51px;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes hero_text1 {
+@-webkit-keyframes hero_text2 {
   0%{
     transform: translateX(100px);
     opacity: 1;
@@ -370,9 +401,9 @@ margin-top: 51px;
 
 .hero_area_text_quote2{
 
-  -webkit-animation-name: hero_text2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: hero_text1; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: hero_text2;
+  animation-name: hero_text1;
   animation-duration: 1s;
 
 
@@ -383,7 +414,7 @@ margin-top: 51px;
 
 
 /* Standard syntax */
-@keyframes hero_text2 {
+@keyframes hero_text1 {
   0%{
     transform: translateX(80px);
     opacity: 1;
@@ -400,7 +431,7 @@ margin-top: 51px;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes hero_text2 {
+@-webkit-keyframes hero_text1 {
   0%{
     transform: translateX(80px);
     opacity: 1;
@@ -416,28 +447,46 @@ margin-top: 51px;
 }
 
 .hero_area_text_subquote{
-  -webkit-animation-name: hero_text1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: hero_text2; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-  animation-name: hero_text1;
+  animation-name: hero_text2;
   animation-duration: 1s;
 
 }
 
 
+/* Standard syntax */
+@keyframes hero_text2 {
+  0%{
+    transform: translateX(-80px);
+    opacity: 1;
+}
+80%{
+  transform: translateX(10px);
+  opacity: 1;
+}
+100%{
+  transform: translateX(0px);
+  opacity: 0;
+}
+
+}
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes hero_text2 {
   0%{
-    transform: translateY(20px);
-    opacity: 0;
+    transform: translateX(-80px);
+    opacity: 1;
 }
-
-100%{
-  transform: translateX(0px);
+80%{
+  transform: translateX(10px);
   opacity: 1;
 }
+100%{
+  transform: translateX(0px);
+  opacity: 0;
 }
-
+}
 @media (max-width: 576px){
   .hero_area_button  a:link,
   .hero_area_button  a:visited
