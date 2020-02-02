@@ -23,10 +23,9 @@ body{
 .fontBold{
 font-family: 'fontBold', sans-serif;
 }
-/* .fontShadow{
-  font-family:  cursive;
-  } */
-
+.fontHeading{
+  font-family: 'Prociono', serif;
+}
 
 /*------------------------- COLOR ----------------------------------*/
 .colorLight{
@@ -178,4 +177,12 @@ nav{
 /* FOOTER */
 .footer{
   background-color: #020251;
+}
+.portfolio_header span{
+ border-bottom: 3px solid #020251;
+
+}
+.project_title span{
+  border-bottom: 3px solid #020251;
+
 }
