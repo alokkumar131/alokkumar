@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "70%";
     $('body').attr("scroll","no").attr("style", "overflow: hidden");
   }
   
@@ -234,6 +234,20 @@ var items = $("#v-pills-html .card");
 
 	
 	
-	
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    
+      for (var i=0;i<4;i++) {
+        next=next.next();
+        if (!next.length) {
+          next=$(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
 
 })

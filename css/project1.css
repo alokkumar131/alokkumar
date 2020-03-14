@@ -364,4 +364,13 @@ nav{
   {
     text-decoration: none;
   }
-  
+  .finaliframe{
+    height: 640px;
+    width: 360px ;
+  }
+  @media (max-width: 576px){
+    .finaliframe{
+      height: 320px;
+      width: 180px ;
+    }
+  }
