@@ -119,10 +119,11 @@ nav{
 
 /* FAB */
 .containe {
-  bottom: 0;
+  bottom: 28px;
   position: fixed;
   z-index: 99;
-  right: 0px;
+  left: 19px;
+  /*! box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .buttons{
@@ -140,13 +141,17 @@ nav{
 }
 .fa-arrow-up{
 
-  color: #ffffff !important;
+color: #ffffff !important;
 
-  cursor: pointer;
-  bottom: 15px;
-  position: fixed;
-  z-index: 99;
-  right: 15px;
+cursor: pointer;
+
+bottom: 44px;
+
+position: fixed;
+
+z-index: 99;
+
+left: 35px;
 }
 
 /* OVERLAY */
