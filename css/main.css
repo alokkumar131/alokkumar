@@ -746,3 +746,12 @@ font-size: 10px;
         transform: rotate(360deg);
     }
 }
+.arrowbtn{
+  background-color:#020251;
+  outline: none;
+
+}
+.arrowbtn:hover{
+  background-color:#020251;
+
+}
