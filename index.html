@@ -1,249 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css?family=Prociono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-  <link rel="stylesheet" href="./packages/bootstrap.min.css">
-
-
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-  <title>Alok</title>
-  <script src="./chat.js"></script>
-
-</head>
-
-<body>
-<!-- Preloader -->
-<!-- <div id="preloader">
-  <div id="loader"></div>
-</div> -->
-  <div class="containe"  style="display: none;"> 
-
-    <a id="fab" class="buttons" href="#hero-section"><i class="fas fa-arrow-up fa-2x"></i></a>
-
-  </div>
-
-  <!-- NAV MENU -->
-
-  <div id="myNav" class="overlay d-none-sm d-block">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
-      <a href="./pages/projects.html"><i class="fas fa-toolbox mr-1"></i>MyWorks</a>
-      <a href="./pages/projects.html"><i class="fas fa-suitcase mr-1"></i>Projects</a>
-      <a href="./pages/about.html"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Rakkas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="./packages/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <title>Alok</title>
+  </head>
+  <body>
+    <div class="containe"  style="display: none;"> 
+      <a id="fab" class="buttons" href="#hero-section"><i class="fas fa-arrow-up fa-2x"></i></a>
     </div>
-  </div>
-
-  <!-- HERO SECTION -->
-  <section id="hero-section" >
-    <nav class="navbar navbar-expand-sm navbar-dark" style="padding-top: 59px;  background-color: #ffffff00;">
-      <div class="container">
-        <a class="navbar-brand colorLight fontBold px-1" href="#">
+    <!-- NAV MENU -->
+    <div id="myNav" class="overlay d-none-sm d-block">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#"><i class="fas fa-home fa-1x mr-1"></i>Home</a>
+        <a href="./pages/projects.html"><i class="fas fa-toolbox mr-1"></i>MyWorks</a>
+        <a href="./pages/projects.html"><i class="fas fa-suitcase mr-1"></i>Projects</a>
+        <a href="./pages/about.html"><i class="fas fa-user-alt fa-1x mr-1"></i>About</a>
+      </div>
+    </div>
+    <!-- HERO SECTION -->
+    <section id="hero-section" >
+      <nav class="navbar navbar-expand-sm navbar-dark" style="padding-top: 59px;  background-color: #ffffff00;">
+        <div class="container">
+          <a class="navbar-brand colorLight fontBold px-1" href="#">
           <img src="./img/logo.png" alt="AK logo" width="60" height="30">
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon" onclick="openNav()"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse fontSmall fontBold">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item ml-4">
-              <a class="nav-link colorBlack active_link" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
-            </li>
-            <li class="nav-item ml-4">
-              <a class="nav-link colorBlack active_hover" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
-            </li>
-            <li class="nav-item ml-4">
-              <a class="nav-link colorBlack active_hover" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
-            </li>
-            <li class="nav-item ml-4">
+          </button>
+          <div class="collapse navbar-collapse  fontBold">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ml-4">
+                <a class="nav-link colorBlack active_link" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link colorBlack active_hover" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+              </li>
+              <li class="nav-item ml-4">
+                <a class="nav-link colorBlack active_hover" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+              </li>
+              <li class="nav-item ml-4">
                 <a class="nav-link colorBlue active_hover" href="pages/about.html" target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
               </li>
-         
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="overlay-section">
-      <div class="hero-inner container">
-        
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="hero_area_text  text-md-left text-sm-center">
-              <div class="hero_area_text_subquote fontMedium colorLight">
-                <p>HEY THERE !</p>
-              </div>
-                <div class="hero_area_text_quote1 fontHeading colorLight fontXLarge" >
-                  I AM ALOK
+      </nav>
+      <div class="overlay-section">
+        <div class="hero-inner container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="hero_area_text  text-center mt-5">
+                <div class="hero_area_text_quote1 fontHeading2 colorLight fontHead" >
+                  I'm Alok
                 </div>
-                <div class="hero_area_text_subquote fontLarge colorLight">
-                  <p>UI/UX Designer</p></div>
+                <div class="hero_area_text_quote1 fontBold font18 colorLight" >
+                  a web designer
+                </div>
                 <div class="hero_button pt-4">
                   <a class="herobtn fontRegular fontSmall"  href="#my-latest-section">SEE MY WORKS</a>
                 </div>
-            
-      
               </div>
-
-
-          
-
             </div>
           </div>
-
-
-
-        </div>
-
-      </div>
-  
-  </section>
-
-
-  <section id="my-latest-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 py-4">
-              <div class="colorBlue fontMedium fontBold text-center mb-3">MY LATEST</div>
-              <div class="colorBlue fontLarge fontHeading text-center mb-4">PROJECTS & CASE STUDIES</div>
-          </div>
-        </div>
-        <div class="row pb-5">
-        
-       <div class="col-sm-4">
-        <div class="card text-center mb-2">
-          <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
-          <div class="card-body">
-            <h5 class="card-title colorBlue fontMedium fontBold text-center">RIDE FINDER</h5>
-            <p class="card-text colorBlue fontSmall fontBold text-center">Transport Management App</p>
-            <a href="#" class="btn btn-primary arrowbtn"><i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-    
-       </div>
-       <div class="col-sm-4">
-        <div class="card text-center mb-2">
-          <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
-          <div class="card-body">
-            <h5 class="card-title colorBlue fontMedium fontBold text-center">TICKETING TOOL</h5>
-            <p class="card-text colorBlue fontSmall fontBold text-center">Task Assignment Tool</p>
-            <a href="#" class="btn btn-primary arrowbtn"><i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-    
-       </div>
-       <div class="col-sm-4">
-        <div class="card text-center">
-          <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
-          <div class="card-body">
-            <h5 class="card-title colorBlue fontMedium fontBold text-center">DELIVS</h5>
-            <p class="card-text colorBlue fontSmall fontBold text-center">Food Delivery App</p>
-            <a href="#" class="btn btn-primary arrowbtn"><i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-    
-       </div>
-        
-
-        </div>
-        
-     
-    </div>
-    <hr>
-  </section>
-
-  <!-- ABOUT ME -->
-  <section id="about-me-section">
-    <div class="container">
-      <div class="row py-4">
-          <div class="col-sm-4 pb-3">
-              <div class="colorBlue fontMedium fontBold">ABOUT ME</div>
-            </div>
-            <div class="col-sm-8">
-              <p class="colorGray fontLargex fontRegular">Hello, I’m Alok.<br>
-                I'm a <strong>designer</strong> that designs user<br> interfaces (<strong>UI</strong>) and user experiences (<strong>UX</strong>) for web and mobile apps.</p>
-            <p class="colorGray fontLargex fontRegular">I have been focusing on developing new products and services, being able to work from research to production.</p>
-
-                <div class="readmore  pt-3">
-                  <a class="colorBlue fontBold fontSmall readmore" href="./pages/about.html">Read more...</a>
-
-                </div>
-            </div>
-      </div>                
-    </div>
- 
-  </section>
-<hr>
-  
-  <!-- RELATED EXPERIANCE -->
-  <section id="related-exp-section">
-      <div class="container">
-        <div class="row py-4">
- 
-                <div class="col-sm-4">
-                    <div class="colorBlue fontMedium fontBold">EXPERIENCE</div>
-                  </div>
-                  <div class="col-sm-8">
-                      <div class="colorBlue fontMedium fontBold pb-3">RELATED EXPERIENCE</div>
-                    <div class="colorLight">
-                      <p class="colorGray fontRegular fontMedium">Associate Designer @ TechMahindra | Hyderabad | Oct 2018 - Jan 2020</p>
-                      <div class="readmore  pt-3">
-                        <a class="colorBlue fontBold fontSmall" href="./pages/about.html">Read more...</a>
-
-                      </div>
-              
-                    </div>
-                  </div>
         </div>
       </div>
     </section>
-
-    
-
-
-  <!-- footer -->
-
-  <footer id="footer_content">
-    <div class="container-fluid">
-        <div class="row text-center footer">
-            <div class="col-sm-12">
-              <div class="colorLight  fontMedium  my-4">CONTACT</div>
-              <div class="colorLight fontRegular fontSmall  my-3">dmalok(at)gmail.com | Hyderabad, India</div>
-              <div class="colorLight fontRegular fontSmall  my-3"><i class="fas fa-mobile-alt mr-1"></i>+91 8280239304</div>
-
-              <div class="colorLight fontRegular fontSmall my-3">&copy; 2020 by Alok Kumar</div>
-            </div>
-      
+    <section id="my-latest-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 py-4">
+            <div class="colorBlue fontMedium fontBold text-center mb-3">MY LATEST</div>
+            <div class="colorGrey fontLargexx fontHeading text-center mb-4">Projects & Case Studies</div>
           </div>
-    </div>
-
-  </footer>
-
-
-
-  <script src="./packages/jquery.js"></script>
-  <script src="./packages/popper.min.js"></script>
-  <script src="./packages/bootstrap.min.js"></script>
-  <script src="./packages/mdb.min.js"></script>
-  <script src="./packages/jquery.waypoints.min.js"></script>
-  <script src="./main.js" ></script>
-
-<script>
-	if(navigator.userAgent.match(/Trident\/7\./)) {
-  document.body.addEventListener("mousewheel", function() {
-    event.preventDefault();
-    var wd = event.wheelDelta;
-    var csp = window.pageYOffset;
-    window.scrollTo(0, csp - wd);
-  });
-}</script>
-</body>
-
+        </div>
+        <div class="row pb-5">
+          <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+            <div class="card text-center mb-2">
+              <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
+              <div class="card-body">
+                <h5 class="card-title colorBlue fontLargex fontBold text-center">Ride Finder</h5>
+                <p class="card-text colorGrey fontSmall fontRegular text-center">Android App</p>
+                <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+            <div class="card text-center mb-2">
+              <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+              <div class="card-body">
+                <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+            <div class="card text-center">
+              <img src="./img/deliv.png" class="card-img-top" alt="aljsdf">
+              <div class="card-body">
+                <h5 class="card-title colorBlue fontLargex fontBold text-center">Delivs</h5>
+                <p class="card-text colorGrey fontSmall fontRegular text-center">Android App</p>
+                <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+            <div class="card text-center">
+              <img src="./img/deliv.png" class="card-img-top" alt="aljsdf">
+              <div class="card-body">
+                <h5 class="card-title colorBlue fontLargex fontBold text-center">Whost</h5>
+                <p class="card-text colorGrey fontSmall fontRegular text-center">Web App</p>
+                <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+              </div>
+            </div>
+            s
+          </div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <!-- ABOUT ME -->
+    <section id="about-me-section">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-sm-4 pb-3">
+            <div class="colorBlue fontMedium fontBold">ABOUT ME</div>
+          </div>
+          <div class="col-sm-8">
+            <p class="colorGray fontMedium fontRegular">Hello, I’m Alok.<br>
+              I'm a <strong style="color:#00aaff">designer</strong> who designs user<br> interfaces <strong style="color:#00aaff">(UI)</strong> and user experiences <strong style="color:#00aaff">(UX)</strong> for web and mobile apps.
+            </p>
+            <p class="colorGray fontMedium fontRegular">I have been focusing on developing new products and services, being able to work from research to production.</p>
+            <div class="readmore  pt-3">
+              <a class="colorBlue fontBold fontSmall readmore" href="./pages/about.html">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <!-- RELATED EXPERIANCE -->
+    <section id="related-exp-section">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-sm-4">
+            <div class="colorBlue fontMedium fontBold">EXPERIENCE</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="colorBlue fontMedium fontBold pb-3">RELATED EXPERIENCE</div>
+            <div class="colorLight">
+              <p class="colorGray fontRegular fontMedium">Associate Designer @ TechMahindra | Hyderabad | Oct 2018 - Jan 2020</p>
+              <div class="readmore  pt-3">
+                <a class="colorBlue fontBold fontSmall" href="./pages/about.html">Read more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer_content">
+      <div class="container-fluid">
+        <div class="row text-center footer">
+          <div class="col-sm-12">
+            <div class="colorLight  fontBold  my-4">CONTACT</div>
+            <div class="colorLight fontBold fontSmall  my-3">alokkumarpadhi3(at)gmail.com | Hyderabad, India</div>
+            <div class="colorLight fontBold fontSmall  my-3"><i class="fas fa-mobile-alt mr-1"></i>+91 8280239304</div>
+            <div class="colorLight fontBold fontSmall my-3">&copy; 2020 by Alok Kumar</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./packages/jquery.js"></script>
+    <script src="./packages/popper.min.js"></script>
+    <script src="./packages/bootstrap.min.js"></script>
+    <script src="./packages/mdb.min.js"></script>
+    <script src="./packages/jquery.waypoints.min.js"></script>
+    <script src="./main.js" ></script>
+  </body>
 </html>
