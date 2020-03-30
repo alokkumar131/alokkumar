@@ -155,9 +155,38 @@ nav {
 }
 
 #hero-section .hero-inner {
-	padding-top: 10vh;
+	margin-top: 150px;
 }
 
+ @media (max-width: 576px) {
+  #hero-section .hero-inner {
+    margin-top: 60px;
+  }
+} 
+
+@media (max-height: 576px) {
+  #hero-section .hero-inner {
+    margin-top: 60px;
+  }
+  .fontHead{
+    font-size: 3rem;
+  }
+  .font18{
+    font-size: 16px;
+  }
+} 
+
+@media (max-height: 350px) {
+  #hero-section .hero-inner {
+    margin-top: 60px;
+  }
+  .fontHead{
+    font-size: 3rem;
+  }
+  .font18{
+    font-size: 16px;
+  }
+} 
 /* @media (max-width: 576px) {
 	.hero_area_button a:link,
 	.hero_area_button a:visited {
