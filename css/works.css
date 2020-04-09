@@ -40,10 +40,10 @@ nav{
   white-space: nowrap;
 }
 .active_link{
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #020251;;
 }
 .active_hover:hover{
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #020251;;
 }
   /* OVERLAY */
 
@@ -101,7 +101,7 @@ nav{
   
   /* HERO SECTION */
   
-  #hero-section{
+  /* #hero-section{
      background-image: linear-gradient(rgba(50, 0, 17, 0),rgba(255, 0, 200, 0.3)), url(https://kdstudiogroup.com/wp-content/uploads/2016/02/slide01_1920x1080-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ nav{
    
     
   
-  }
+  } */
   
   .hero_area_text_quote1{
       letter-spacing: 15px;

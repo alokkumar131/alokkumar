@@ -7,7 +7,7 @@ body{
   font-family: 'fontRegular', serif;
   line-height: 1.7;
   font-size: 16px;
-  background-color: #f9fafa;
+  background-color: #ffffff;
   color: #777;
 }
 
@@ -16,18 +16,21 @@ body{
 
 
 .fontBold{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: 700;
 }
 .fontRegular{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Play', sans-serif;
   font-weight: 400;
  }
 .fontHeading{
-  font-family: 'Rakkas', cursive;
+  font-family: 'Play', cursive;
+  font-weight: 700;
 }
 .fontHeading2{
-  font-family: 'Ceviche One', cursive;
+  font-family: 'Play', cursive;
+  font-weight: 600;
+
 }
 
 /*------------------------- COLOR ----------------------------------*/
@@ -38,7 +41,7 @@ body{
   color: #202020;
 }
 .colorBlue{
-  color:#00aaff;
+  color: #020251;
 }
 .colorBlack{
   color: #000000;
@@ -148,7 +151,7 @@ body{
   width: 40px;
   height: 40px;
   margin: 20px 5px 0;
-  background-color: #00aaff;
+  background-color: #020251;
   outline: none;
   color: #ffffff !important;
   display: inline-block;

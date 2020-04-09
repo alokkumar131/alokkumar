@@ -85,16 +85,18 @@ $(document).ready(function(){
       $('nav').addClass('fixed-top');
       $('nav').css('padding-top','0px');
       $('nav').css('opacity', '1');
-      $('nav').css('background-color','#00aaff');
+      $('nav').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)')
+      $('nav').css('background-color','#ffffff');
       $('nav').css('padding-bottom','0px');
       $('.containe').css('display','block');
       
     } else {
       $('nav').removeClass('fixed-top');
-      $('nav').css('padding-top','59px');
 
-      $('nav').css('background-color','#ffffff00');
-		 $('nav').css('background-color','');
+
+      $('nav').css('background-color','#ffffff');
+      $('nav').css('box-shadow', '0 0px 0px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0)')
+     $('nav').css('background-color','#ffffff');
       $('.containe').css('display','none');
      
     }

@@ -30,7 +30,7 @@ nav {
 }
 
 .navbar-dark .navbar-toggler-icon {
-	background-image: url(https://img.icons8.com/ios-filled/50/ffffff/menu.png);
+	background-image: url(https://img.icons8.com/ios-filled/50/020251/menu.png);
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -44,7 +44,7 @@ nav {
 
 .nav-item a:hover,
 .nav-item a:active {
-	color: rgb(233, 233, 233) !important;
+	color: rgb(0, 0, 0) !important;
 }
 
 .navbar-brand {
@@ -54,17 +54,48 @@ nav {
 }
 
 .active_link {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid  #020251;;
 }
 
 .active_hover:hover {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid  #020251;;
 }
 
+.carousel-control-next-icon {
+	background-image: url(../img/next.svg);
+	height: 30px;
+	width: 30px;
+}
+.carousel-control-prev-icon {
+	background-image: url(../img/back.svg);
+	height: 30px;
+	width: 30px;
+}
+.carousel-indicators li{
+	background-color: #777;
+}
+.carousel-indicators .active{
+	background-color: #020251;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -29px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+	list-style: none;
 
+}
 /* HERO SECTION */
 
-#hero-section {
+/* #hero-section {
 	background: url(../img/bg.png);
 	background-image: url("../img/bg.png");
 	background-image: url(../img/bg.png);
@@ -73,7 +104,7 @@ nav {
 	min-height: 100vh;
 	background-attachment: fixed;
 	background-position: top;
-}
+} */
 
 
 
@@ -210,7 +241,7 @@ nav {
 }
 
 .arrowbtn {
-	background-color: #00aaff;
+	background-color: #020251;
 	outline: none;
 	padding: 10px 20px;
 	text-transform: uppercase;
@@ -253,8 +284,8 @@ nav {
 /* FOOTER */
 
 .footer {
-    color:#00aaff;
-    background-color: #00aaff;
+    
+    background-color: #ffffff;
 }
 
 @media (max-width: 576px) {

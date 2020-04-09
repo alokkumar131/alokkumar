@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Rakkas&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="./packages/bootstrap.min.css">
     <link rel="stylesheet" href="./css/global.css">
@@ -29,7 +28,7 @@
     </div>
     <!-- HERO SECTION -->
     <section id="hero-section" >
-      <nav class="navbar navbar-expand-sm navbar-dark" style="padding-top: 59px;  background-color: #ffffff00;">
+      <nav class="navbar navbar-expand-sm navbar-dark" style=" background-color: #ffffff;">
         <div class="container">
           <a class="navbar-brand colorLight fontBold px-1" href="#">
           <img src="./img/logo.png" alt="AK logo" width="60" height="30">
@@ -40,51 +39,168 @@
           <div class="collapse navbar-collapse  fontBold">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ml-4">
-                <a class="nav-link colorBlack active_link" href="index.html" target="_self" style="color: #ffffff;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+                <a class="nav-link colorBlack active_link fontBold" href="index.html" target="_self" style="color: #020251;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
               </li>
               <li class="nav-item ml-4">
-                <a class="nav-link colorBlack active_hover" href="pages/works.html" target="_self" style="color: #ffffff;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
+                <a class="nav-link colorBlack active_hover fontBold" href="pages/works.html" target="_self" style="color: #020251;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
               </li>
               <li class="nav-item ml-4">
-                <a class="nav-link colorBlack active_hover" href="pages/projects.html" target="_self" style="color: #ffffff;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
+                <a class="nav-link colorBlack active_hover fontBold" href="pages/projects.html" target="_self" style="color:  #020251;" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
               </li>
               <li class="nav-item ml-4">
-                <a class="nav-link colorBlue active_hover" href="pages/about.html" target="_self" style="color: #ffffff;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
+                <a class="nav-link colorBlue active_hover fontBold" href="pages/about.html" target="_self" style="color:  #020251;"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="overlay-section">
-        <div class="hero-inner container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="hero_area_text  text-center">
-                <div class="hero_area_text_quote1 fontHeading2 colorLight fontHead" >
-                  I'm Alok
-                </div>
-                <div class="hero_area_text_quote1 fontBold font18 colorLight" >
-                  a web designer
-                </div>
-                <div class="hero_button pt-4">
-                  <a class="herobtn fontRegular fontSmall"  href="#my-latest-section">SEE MY WORKS</a>
-                </div>
-              </div>
-            </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/bg1.png" alt="First slide" >
+          </div>
+          <div class="carousel-item">
+            <img class="d-block  w-100" src="./img/bg2.png" alt="Second slide" >
+          </div>
+          <div class="carousel-item">
+            <img class="d-block  w-100" src="./img/bg3.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block  w-100" src="./img/bg4.png" alt="Third slide">
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
+    <hr>
     <section id="my-latest-section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 py-4">
+          <div class="col-sm-12 pt-4 pb-1">
             <div class="colorBlue fontMedium fontBold text-center mb-3">MY LATEST</div>
             <div class="colorGrey fontLargexx fontHeading text-center mb-4">Projects & Case Studies</div>
           </div>
         </div>
-        <div class="row pb-5">
-          <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+        <div class="row pb-4 px-3">
+          <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                <!-- <li data-target="#blogCarousel" data-slide-to="1"></li> -->
+            </ol>
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active py-4">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2 ">
+                          <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ride Finder</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Android App</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6 pr-2">
+                        <div class="card text-center mb-2 ">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.item-->
+
+                <!-- <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3 col-6">
+                        <div class="card text-center mb-2">
+                          <img src="./img/deliv1.png" class="card-img-top" alt="aljsdf">
+                          <div class="card-body">
+                            <h5 class="card-title colorBlue fontLargex fontBold text-center">Ticketing Tool</h5>
+                            <p class="card-text colorGrey fontSmall fontRegular text-center">Web Design</p>
+                            <a href="#" class="arrowbtn fontSmall fontBold">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--.row-->
+                </div> 
+                <!--.item-->
+
+            </div>
+            <!--.carousel-inner-->
+            
+        </div>
+        <!--.Carousel-->
+          <!-- <div class="col-sm-6 col-md-6 col-lg-3 col-6">
             <div class="card text-center mb-2">
               <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="aljsdf">
               <div class="card-body">
@@ -124,7 +240,7 @@
               </div>
             </div>
         
-          </div>
+          </div> -->
         </div>
       </div>
       <hr>
@@ -168,15 +284,16 @@
         </div>
       </div>
     </section>
+    <hr>
     <!-- footer -->
     <footer id="footer_content">
       <div class="container-fluid">
-        <div class="row text-center footer">
+        <div class="row text-center ">
           <div class="col-sm-12">
-            <div class="colorLight  fontBold  my-4">CONTACT</div>
-            <div class="colorLight fontBold fontSmall  my-3">alokkumarpadhi3(at)gmail.com | Hyderabad, India</div>
-            <div class="colorLight fontBold fontSmall  my-3"><i class="fas fa-mobile-alt mr-1"></i>+91 8280239304</div>
-            <div class="colorLight fontBold fontSmall my-3">&copy; 2020 by Alok Kumar</div>
+            <div class="colorLight  fontBold  colorBlue my-4 c">CONTACT</div>
+            <div class="colorGrey fontRegular fontSmall  my-3">alokkumarpadhi3(at)gmail.com | Hyderabad, India</div>
+            <div class="colorGrey fontRegular fontSmall  my-3"><i class="fas fa-mobile-alt mr-1"></i>+91 8280239304</div>
+            <div class="colorGrey fontRegular fontSmall my-3">&copy; 2020 by Alok Kumar</div>
           </div>
         </div>
       </div>
