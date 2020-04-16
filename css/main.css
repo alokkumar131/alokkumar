@@ -1,65 +1,4 @@
-/* NAV */
-nav {
-	height: 50px;
-	padding-bottom: 0px;
-	z-index: 9;
-	font-size: 0.8rem;
-}
 
-@media (max-width: 576px) {
-	nav {
-		height: 50px;
-		padding-bottom: 0px;
-		font-size: 0.6rem;
-	}
-}
-
-@media (min-width: 576px) {
-	.navbar-expand-sm .navbar-nav .nav-link {
-		padding-right: 0rem;
-		padding-left: 0rem;
-	}
-}
-
-.navbar-dark .navbar-nav .nav-link {
-	color: #ffffff
-}
-
-.navbar-dark .navbar-toggler {
-	border: none;
-}
-
-.navbar-dark .navbar-toggler-icon {
-	background-image: url(https://img.icons8.com/ios-filled/50/020251/menu.png);
-}
-
-.navbar-toggler:not(:disabled):not(.disabled) {
-	cursor: pointer;
-	outline: none;
-}
-
-.navbar {
-	opacity: 0.8;
-}
-
-.nav-item a:hover,
-.nav-item a:active {
-	color: rgb(0, 0, 0) !important;
-}
-
-.navbar-brand {
-	font-size: 0px !important;
-	line-height: inherit;
-	white-space: nowrap;
-}
-
-.active_link {
-	border-bottom: 2px solid  #020251;;
-}
-
-.active_hover:hover {
-	border-bottom: 2px solid  #020251;;
-}
 
 .carousel-control-next-icon {
 	background-image: url(../img/next.svg);
@@ -75,7 +14,7 @@ nav {
 	background-color: #777;
 }
 .carousel-indicators .active{
-	background-color: #020251;
+	background-color: #0000ff;
 }
 .carousel-indicators {
     position: absolute;
@@ -236,12 +175,15 @@ nav {
 .card {
 	transition: .3s;
 	border: none;
-	background-color: #f3f3f3;
+	background-color: #ffffff;
 	border-radius: 0px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 2px 7px -7px #777;
 }
 
 .arrowbtn {
-	background-color: #020251;
+	background-color: blue;
 	outline: none;
 	padding: 10px 20px;
 	text-transform: uppercase;
@@ -256,7 +198,7 @@ nav {
 
 @media (max-width: 576px) {
 	.arrowbtn {
-		background-color: #020251;
+		background-color: #0000ff;
 		padding: 5px 10px;
 		color: #fff;
 		text-decoration: none;

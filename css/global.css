@@ -41,7 +41,7 @@ body{
   color: #202020;
 }
 .colorBlue{
-  color: #020251;
+  color: blue;
 }
 .colorBlack{
   color: #000000;
@@ -151,28 +151,110 @@ body{
   width: 40px;
   height: 40px;
   margin: 20px 5px 0;
-  background-color: #020251;
+  background-color: #ffffff;
   outline: none;
   color: #ffffff !important;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 2px 2px 8px #000;
+  box-shadow: 2px 2px 8px #cbcaca;
 }
 .fa-arrow-up{
 
-color: #ffffff !important;
+color: #0000ff !important;
 
 cursor: pointer;
 
-bottom: 41px;
+bottom: 47px;
 
 position: fixed;
 
 z-index: 99;
 
-right: 30px;
+right: 36px;
 }
 
+/* NAV */
+nav {
+	height: 50px;
+	padding-bottom: 0px;
+	z-index: 9;
+	font-size: 0.8rem;
+}
 
+@media (max-width: 576px) {
+	nav {
+		height: 50px;
+		padding-bottom: 0px;
+		font-size: 0.6rem;
+	}
+}
 
+@media (min-width: 576px) {
+	.navbar-expand-sm .navbar-nav .nav-link {
+		padding-right: 0rem;
+		padding-left: 0rem;
+	}
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #ffffff
+}
+
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url(https://img.icons8.com/ios-filled/50/0000ff/menu.png);
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+	cursor: pointer;
+	outline: none;
+}
+
+.navbar {
+	opacity: 0.8;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+	color: rgb(0, 140, 255) !important;
+}
+
+.navbar-brand {
+	font-size: 0px !important;
+	line-height: inherit;
+	white-space: nowrap;
+}
+
+.active_link {
+	border-bottom: 2px solid  blue;;
+}
+
+.active_hover:hover {
+	border-bottom: 2px solid  blue;
+}
+.social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  position: relative;
+  text-align: center;
+  color: blue;
+}
+
+.social a span {
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social a:hover {
+  color: blue;
+}
