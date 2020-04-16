@@ -1,5 +1,4 @@
         $(document).ready(function(){
-            console.log("khsdkhj")
             setTimeout(function(){
                 $(".img-card").click(function(){
                     var src = $(this).attr("src");

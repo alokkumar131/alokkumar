@@ -201,8 +201,8 @@ $(document).ready(function(){
 
 
 
-    $.getJSON( "/image.json", function( data ) {
-      console.log(data)
+    $.getJSON( "https://pfser.herokuapp.com/", function( data ) {
+     
        var items = data
       $.each( items, function( key, val ) {
 
@@ -240,8 +240,8 @@ $(document).ready(function(){
      
     });
 
-    $.getJSON( "/image.json", function( data ) {
-      console.log(data)
+    $.getJSON( "https://pfser.herokuapp.com/", function( data ) {
+    
        var items = data
       $.each( items, function( key, val ) {
 
@@ -281,7 +281,7 @@ $(document).ready(function(){
      
     });
 
-    $.getJSON( "/image.json", function( data ) {
+    $.getJSON( "https://pfser.herokuapp.com/", function( data ) {
        var items = data
       $.each( items, function( key, val ) {
 
