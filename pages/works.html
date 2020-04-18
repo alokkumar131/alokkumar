@@ -34,13 +34,10 @@
           <div class="collapse navbar-collapse  fontBold">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ml-4">
-                <a class="nav-link colorBlack active_hover fontBold fontMedium" href="../index.html" target="_self" style="color: blue;"><i class="fas fa-home fa-1x mr-1"></i>HOME</a>
+                <a class="nav-link colorBlack active_hover fontBold fontMedium" href="../index.html" target="_self" style="color: blue;"><i class="fas fa-home fa-1x mr-1"></i>HOME </a>
               </li>
               <li class="nav-item ml-4">
                 <a class="nav-link colorBlack active_link  fontBold fontMedium" href="#" target="_self" style="color: blue;"><i class="fas fa-toolbox mr-1"></i>MY WORKS</a>
-              </li>
-              <li class="nav-item ml-4">
-                <a class="nav-link colorBlack active_hover fontBold fontMedium" href="projects.html" target="_self" style="color: blue" ><i class="fas fa-suitcase mr-1" onclick="openProject()"></i>PROJECTS</a>
               </li>
               <li class="nav-item ml-4">
                 <a class="nav-link colorBlue active_hover fontBold fontMedium" href="about.html" target="_self" style="color:  blue"><i class="fas fa-user-alt fa-1x mr-1"></i>ABOUT</a>
@@ -66,6 +63,9 @@
             <div class="row">
                 <div class="col-sm-12 pt-5">
                     <div class="colorBlue fontLargexx fontHeading text-center mb-4 pt-5" >MY WORKS</div>
+                  
+                    
+
                 </div>
             </div>
 
@@ -74,9 +74,9 @@
 
                     <div>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <a class="nav-item nav-link active colorGrey fontLargex fontBold" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Web</a>
-                          <a class="nav-item nav-link fontLargex colorGrey fontBold" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Graphics</a>
-                          <a class="nav-item nav-link fontLargex colorGrey fontBold" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Web Mockups</a>
+                          <a class="nav-item nav-link active colorGrey fontLargex fontBold" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Graphics</a>
+                          <a class="nav-item nav-link fontLargex colorGrey fontBold" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">UI Designs</a>
+                          <a class="nav-item nav-link fontLargex colorGrey fontBold" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Web Projects</a>
                         </div>
                     </div>
                 </div>
@@ -86,8 +86,11 @@
                 <div class="col-sm-12 py-5 text-center">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+ 
                             <div class="row" id="img_json">
                                 <!-- Image will gose here -->
+                                <div id="spinner" class="col-sm-12 colorGrey fontLargex fontBold" >LOADING...</div>
+
                              
                              </div>
                              <div class="row py-5">
@@ -110,6 +113,7 @@
                          
                          </div>
                          <div class="row py-5">
+                           
                              <div class="col-sm-12">
                                  <div id="pagination-container3"></div>	
                              </div>
@@ -126,7 +130,7 @@
           </button>
         </div>
        <div class="modal-body">
-        <img id="modal_img" src="../img/roar_bikes.png"  width = "898" class ="img-fluid" alt="">
+        <img id="modal_img" src=""  width = "898" class ="img-fluid" alt="">
 
        </div>
      
