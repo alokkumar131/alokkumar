@@ -1,19 +1,20 @@
 $(document).ready(function() {
     $(document).ajaxStart(function() {
-        $("#spinner").css("display", "block")
+        $("#spinner").css("display", "block");
     });
     $(document).ajaxComplete(function() {
         $("#spinner").css("display", "none")
     });
-
 $.ajax({
 
     url: "https://pfser.herokuapp.com/",
     type: "GET",
-    dataType : "json",
+    dataType : "json"
 })
   .done(function( data ) {
+
     var items = data
+
     $.each(items, function(key, val) {
 
         $("#img_json")
@@ -48,6 +49,9 @@ $.ajax({
     alert( "Sorry, there was a problem!" );
   })
 
+function getUiDesigns(e){
+  e.preventDefault();
+    $("#spinner2").css("display", "block");
   $.ajax({
 
     url: "https://pfser.herokuapp.com/ui",
@@ -55,6 +59,8 @@ $.ajax({
     dataType : "json",
 })
   .done(function( data ) {
+    
+    $("#spinner2").css("display", "none");
     var items = data
     $.each(items, function(key, val) {
 
@@ -92,6 +98,11 @@ $.ajax({
   .fail(function( xhr, status, errorThrown ) {
     alert( "Sorry, there was a problem!" );
   })
+}
+
+
+function getBootstrapProjects(){
+  $("#spinner3").css("display", "block");
 
   $.ajax({
 
@@ -100,6 +111,7 @@ $.ajax({
     dataType : "json",
 })
   .done(function( data ) {
+    $("#spinner3").css("display", "none");
     var items = data
     $.each(items, function(key, val) {
 
@@ -139,6 +151,10 @@ $.ajax({
   })
 
 
+
+}
+$("#nav-profile-tab").on("click", getUiDesigns)
+$("#nav-contact-tab").on("click", getBootstrapProjects);
 
 
         $("body").on('click', '.img-card', function() {
