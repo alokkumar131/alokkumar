@@ -50,6 +50,7 @@ $.ajax({
   })
 
 function getUiDesigns(e){
+  $("#nav-profile-tab").off("click");
   e.preventDefault();
     $("#spinner2").css("display", "block");
   $.ajax({
@@ -102,6 +103,7 @@ function getUiDesigns(e){
 
 
 function getBootstrapProjects(){
+  $("#nav-profile-tab").off("click")
   $("#spinner3").css("display", "block");
 
   $.ajax({
@@ -154,7 +156,7 @@ function getBootstrapProjects(){
 
 }
 $("#nav-profile-tab").on("click", getUiDesigns)
-$("#nav-contact-tab").on("click", getBootstrapProjects);
+$("#nav-profile-tab").on("click", getBootstrapProjects);
 
 
         $("body").on('click', '.img-card', function() {
