@@ -1,188 +1,106 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-/*----------------------- FONTS----------------------------------- */
-@font-face{
-  src:url(../fonts/OpenSans-Regular.ttf);
-  font-family: fontRegular;
-}
-@font-face{
-   src:url(../fonts/OpenSans-Bold.ttf);
-   font-family: fontBold;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  font-family: 'fontRegular', serif;
-  line-height: 1.7;
-  font-size: 10px;
-  background-color: #f9fafa;
-
-}
-.fontBold{
-font-family: 'fontBold', sans-serif;
-}
-.fontHeading{
-  font-family: 'Prociono', serif;
-}
-
-/*------------------------- COLOR ----------------------------------*/
-.colorLight{
-   color: #ffffff;
-}
-.colorGray{
-  color: #808080;
-}
-.colorBlue{
-  color:#020251;
-}
-.colorBlack{
-  color: #000000;
-}
-
-
-
-
-/*------------------------- FONT SIZE------------------------------ */
-
-.fontSmall{
-   font-size: 12px;
-}
-.fontMedium{
-   font-size: 16px;
-}
-.fontLarge{
-  font-size: 40px;
-}
-.fontLargex{
-   font-size: 24px;
-}
-.fontXLarge{
-   font-size: 54px;
-}
-.font18{
-  font-size: 18px;
-}
-
-  
-  /* NAV */
-nav{
-  height: 50px;
-  padding-bottom: 0px;
-	background: #020251;
-  z-index: 9;
-}
-@media (max-width: 576px){
-  nav{
-    height: 50px;
-    padding-bottom: 0px;
-}
-}
-
-
-.navbar-dark .navbar-nav .nav-link {
-  color:#ffffff
-}
-.navbar-dark .navbar-toggler {
-
-  border: none;
-}
-.navbar-dark .navbar-toggler-icon {
-  background-image: url(https://img.icons8.com/ios-filled/50/ffffff/menu.png);
-}
-.navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
-  outline: none;
-}
-.navbar {opacity: 0.8;}
-.nav-item a:hover,
-.nav-item a:active{
- color:rgb(233, 233, 233) !important;
-}
-.navbar-brand {
-  font-size: 0px !important;
-  line-height: inherit;
-  white-space: nowrap;
-}
-.active_link{
-	border-bottom: 2px solid #fff;
-}
-.active_hover:hover{
-	border-bottom: 2px solid #fff;
-}
-  /* OVERLAY */
-
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9990;
-  top: 0px;
-  left: 0;
-  background-color: #020251;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
+html,
+body {
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  height: 100%;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #585858;
-}
-
-.overlay .closebtn {
+#wrapper {
+  display: inline-block;
+  max-width: 300px;
   position: absolute;
-  top: 26px;
-  right: 18px;
-  font-size: 60px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
 
+#logo {
+  display: block;
+  margin: 0 auto 30px;
+  font-size: 48px;
+}
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 32px;
-  right: 23px;
+#typed-wrapper {
+  font-size: 28px;
+  color: #002fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.typed-cursor {
+  display: inline-block;
+  margin-left: -8px;
+  
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-#projects_section
-{
-	padding-top: 70px;
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.cvbtn{
-    background: #020251;
-    color: #ffffff;
-    outline: none;
-}
-/* FOOTER */
-.footer{
-  background-color: #020251;
-}
-.portfolio_header span{
- border-bottom: 3px solid #020251;
-
-}
-.project_title span{
-  border-bottom: 3px solid #020251;
-
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
