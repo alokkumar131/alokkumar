@@ -79,7 +79,7 @@ function getUiDesigns(e){
     });
     var itms = $("#nav-profile .tem");
     var numItems = itms.length;
-    var perPage = 9;
+    var perPage = 18;
 
     itms.slice(perPage).hide();
 
@@ -131,7 +131,7 @@ function getBootstrapProjects(){
     });
     var itms = $("#nav-contact .gr");
     var numItems = itms.length;
-    var perPage = 9;
+    var perPage = 18;
 
     itms.slice(perPage).hide();
 
