@@ -103,7 +103,7 @@ function getUiDesigns(e){
 
 
 function getBootstrapProjects(){
-  $("#nav-profile-tab").off("click")
+  $("#nav-contact-tab").off("click");
   $("#spinner3").css("display", "block");
 
   $.ajax({
@@ -156,7 +156,7 @@ function getBootstrapProjects(){
 
 }
 $("#nav-profile-tab").on("click", getUiDesigns)
-$("#nav-profile-tab").on("click", getBootstrapProjects);
+$("#nav-contact-tab").on("click", getBootstrapProjects);
 
 
         $("body").on('click', '.img-card', function() {
