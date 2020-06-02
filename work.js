@@ -71,7 +71,7 @@ function getUiDesigns(e){
         "<img class='img-card card-img-top img-fluid' src=" + val.thumb + "   alt='"+val.caption+"'></a>" +
 
         "<div class='card-body'>" +
-        "<p class='card-text colorBlue fontBold fontLargex'>"+val.caption+"</p>" +
+        "<p class='card-text colorLight fontBold fontMedium'>"+(val.caption).toUpperCase()+"</p>" +
         "</div>" +
         "</div>" + "</div>"
 
@@ -117,13 +117,15 @@ function getBootstrapProjects(){
     var items = data
     $.each(items, function(key, val) {
 
+
+
         $("#graphics")
         .append("<div class='col-sm-6 col-md-6 col-lg-3 col-6 mb-3 tem'>" + "<div class='card text-center'>" +
         "<a href='"+val.main+"' target='_blank' >" +
         "<img class='img-card card-img-top img-fluid' src=" + val.thumb + "   alt='"+val.caption+"'></a>" +
 
         "<div class='card-body'>" +
-        "<p class='card-text colorBlue fontBold fontLargex'>"+val.caption+"</p>" +
+        "<p class='card-text colorLight fontBold fontMedium'>"+(val.caption).toUpperCase()+"</p>" +
         "</div>" +
         "</div>" + "</div>"
 
