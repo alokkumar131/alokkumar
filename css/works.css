@@ -20,6 +20,12 @@
     .gallary{
         margin-top: 35px !important;
     }
+    .card-body{
+      padding: 0.25rem;
+    }
+    .fontMedium{
+      font-size: 14px;
+    }
   }
   
   
