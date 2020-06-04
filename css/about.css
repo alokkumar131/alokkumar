@@ -251,6 +251,9 @@ transform: scale(0,0);
 .font18{
    font-size: 14px;
 }
+.fontMedium{
+   font-size: 14px;
+}
 .fontSmall{
    font-size: 10px;
 }
